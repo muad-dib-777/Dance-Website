@@ -1,0 +1,54 @@
+meta(charset='UTF-8')
+meta(http-equiv='X-UA-Compatible' content='IE=edge')
+meta(name='viewport' content='width=device-width,initial-scale=1')
+title Dance Academy
+link(rel='stylesheet' href='../static/style.css')
+link(href='https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap' rel='stylesheet')
+
+nav#navbar.top
+  ul
+    #logo
+      img(src='../static/logo.png')
+      | DDA
+
+
+    li
+      a(href='/') Home
+    li
+      a(href='/') About
+    li
+      a(href='/') Services
+    li
+      a(href='/') Contact Us
+
+section#introSection
+  h2 Welcome to Deepro's Dance Academy
+  h4 Eat. Sleep. Dance. Repeat.
+
+section#missionSection
+  #head Our Mission
+  #cardContainer
+    .card
+      h2 Dance Perfection
+      p Make your dance moves impeccable
+    .card
+      h2 Dance the way you like
+      p Express your creativity freely
+    .card
+      h2 Expert Teaching
+      p Learn from the very best
+
+
+section#sponsorSection
+  div Our Sponsors
+  #sponsors
+    img.spImage(src='../static/sponsor1.svg' alt='Sponsor Image')
+    img.spImage(src='../static/sponsor2.png' alt='Sponsor Image')
+    img.spImage(src='../static/sponsor3.png' alt='Sponsor Image')
+    img.spImage(src='../static/sponsor4.png' alt='Sponsor Image')
+
+
+footer#footer.
+  
+  | Copyright © 2022 DeeproDanceAcademy.com | All rights reserved
+  

@@ -1,0 +1,42 @@
+extends base.pug
+
+block scripts
+  script(src = "../static/index.js")
+
+block style 
+    link(rel='stylesheet' href='../static/style.css')
+
+
+block content 
+    
+
+    section#introSection
+        h2 Welcome to Deepro's Dance Academy
+        h4 Eat. Sleep. Dance. Repeat.
+
+    section#missionSection
+        #head Our Mission
+        #cardContainer
+            .card
+                h2 Dance Perfection
+                p Make your dance moves impeccable
+            .card
+                h2 Dance the way you like
+                p Express your creativity freely
+            .card
+                h2 Expert Teaching
+                p Learn from the very best
+
+
+    section#sponsorSection
+        div Our Sponsors
+        #sponsors
+            img.spImage(src='../static/sponsor1.svg' alt='Sponsor Image')
+            img.spImage(src='../static/sponsor2.png' alt='Sponsor Image')
+            img.spImage(src='../static/sponsor3.png' alt='Sponsor Image')
+            img.spImage(src='../static/sponsor4.png' alt='Sponsor Image')
+
+block foot 
+    footer#footer.
+  
+        Copyright © 2022 DeeproDanceAcademy.com | All rights reserved

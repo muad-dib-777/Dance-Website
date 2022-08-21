@@ -1,0 +1,27 @@
+extends base.pug
+
+block scripts
+  script(src = "../static/index.js")
+
+block style 
+    link(rel='stylesheet' href='../static/style.css')
+    link(rel='stylesheet' href='../static/styleContact.css')
+
+block content 
+    div(id = "container")
+        h1 Contact Us
+        form(action = "/contact", method = "post", id = "myForm")
+            input(type="text", id = "name", name = "name", placeholder = "Enter your name")
+            input(type="text", id = "age", name = "age", placeholder = "Enter your age")
+            input(type="email", id = "email", name = "email", placeholder = "Enter your email")
+            input(type="text", id = "address", name = "address", placeholder = "Enter your address")
+            button(class = "btn")
+                | Submit
+        
+
+
+
+block foot 
+    footer#footer.
+  
+        Copyright © 2022 DeeproDanceAcademy.com | All rights reserved
